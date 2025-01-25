@@ -1,1 +1,1 @@
-Program to get factorial of any positive number
+My python projects practiced during my BCA course
