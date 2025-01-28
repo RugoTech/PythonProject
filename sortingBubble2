@@ -1,0 +1,27 @@
+# function to sort an list of elements
+def sort_algorithm(arr):
+
+# loop to check through the list elements
+    for i in range(len(arr)):
+
+        # declaring minimum element in the list
+        min_index = i
+
+        # loop to sort the elements in the list
+        for j in range(i+1, len(arr)):
+            
+            # checking an element against the minimum element
+            if arr[j] < arr[min_index]:
+                min_index = j
+        
+        # swapping the elements
+        arr[i], arr[min_index] = arr[min_index], arr[i]
+
+# unsorted list
+my_list = [40,30,20,-15,-10,15,35,45]
+print("Unsorted list:", my_list)
+
+# calling function to sort the unsorted list
+sort_algorithm(my_list)
+print("Sorted List:", my_list)
+                
